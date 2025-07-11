@@ -1,0 +1,107 @@
+Act as a top-tier, AI-native full-stack web developer, UI/UX architect, and creative engineer inside Replit. You are to **rebuild, refactor, and finalize** the hacker-themed blog website I already have into a **futuristic, highly-performant, terminal-style masterpiece** — fully downloadable and deployable as a ZIP project.
+
+📦 This is not a sample — it's a real, production-ready portfolio/blog system tailored for a **reverse engineer & security researcher**.
+
+🧠 You will use **Replit-supported technologies only** (no Firebase). Use local DB, Replit Auth, and any modern React-based framework. Follow the principles of speed, elegance, structure, and hacker-grade aesthetics.
+
+—
+
+🛠️ **CORE MANDATES — Rebuild with These Enhancements**:
+
+### 🔧 1. **Structural & Packaging**
+- Fully restructure the project into:
+  - `/client` → all frontend (React/Preact, components, pages, styles)
+  - `/server` → API routes, DB logic (Replit DB or Supabase)
+  - `/shared` → shared constants, models, utilities
+- Ensure the entire project is easily downloadable as a **ZIP**, and all config/images/text are **editable in one place**
+- Add `README.md` with instructions to:
+  - Replace logo
+  - Customize skills section
+  - Add/edit posts manually if needed
+  - Run locally or deploy
+
+---
+
+### 🎨 2. **UI/UX: Futuristic Hacker Aesthetic**
+- Default to a **deep indigo/blue hacker color scheme** (NO white/light mode at all)
+- Remove all theme toggles — force **deep dark UI across all pages**
+- Replace font globally with `Inter` (for ultra-clear readability)
+- Add **sophisticated animations**:
+  - Hero section with glitchy typewriter welcome text ("Welcome to Hacker's Blog")
+  - Animated SVG elements (circuits, scanlines, matrix lines)
+  - Scroll-triggered animations (fade-in, scale-up, slide)
+  - Hover effects for buttons, links, cards — glowing outlines, blur trails
+- Use `tailwindcss-animate`, custom CSS effects, and minimal JS where needed
+
+---
+
+### 📄 3. **Pages and Navigation**
+- Fix all issues with duplicate navbars or layout overlap
+- Fully responsive navigation with clean layout across devices
+- Required pages:
+  - `/` (landing page with animated hero + featured posts)
+  - `/about`:
+    - Use uploaded image `hacker-25926.png` as avatar/logo
+    - Add profile description + social links (GitHub, LinkedIn, Instagram, Facebook)
+    - Add **Skills section** with animations:
+      ```
+      Reverse Engineering • Ghidra • x64dbg • IDA • Web Exploits • Assembly • Malware Analysis • Exploit Dev • Network Forensics • Linux Debugging • Cryptography • Python Automation
+      ```
+      Use neon effects, badges, icons, or animated list
+  - `/blog` → public list of posts (cards with tags, date, preview)
+  - `/post/:slug` → full blog page:
+    - Highlight code using Prism.js or Highlight.js (Dracula/Monokai theme)
+    - Markdown rendering with image and code support
+    - Copy code buttons per block
+    - Deep blue terminal style throughout
+  - `/admin`:
+    - Authenticated users only (Replit Auth or password-protected form)
+    - Blog post editor with:
+      - Title input
+      - Markdown body
+      - Code snippet insertion (with live highlight)
+      - Image upload (or URL paste)
+      - Preview toggle
+  - `/archive` or `/history` → list of posts by year/month
+
+---
+
+### 🔐 4. **Authentication & Admin Workflow**
+- Use Replit OAuth or local session-based login
+- Only authenticated users can create/edit/delete posts
+- Store post data using **Replit DB**, or fallback to a local JSON file system (JSON-based CMS model)
+
+---
+
+### ⚙️ 5. **Content, Configs, Assets**
+- Replace current logo with `hacker-25926.png` (favicon and site branding)
+- Use dummies where needed, label clearly
+- Allow easy content changes via one file or CMS page:
+  - Site name
+  - Bio
+  - Skills list
+  - Social links
+  - Logo path
+- Add SEO meta (title, description) to each page with sensible defaults
+
+---
+
+### ⚡ 6. **Technical Specs & Dev Experience**
+- Use:
+  - `Tailwind CSS` for styling
+  - `React` or `Preact` for UI
+  - `Prism.js` or `Highlight.js` for syntax highlighting
+  - `Replit DB` or in-memory DB for post storage
+- Include:
+  - `utils/slugify.ts` for clean post URLs
+  - `lib/db.ts` for managing post I/O
+  - `types/Post.ts` interface
+- Optimize performance and maintain clean, readable code
+- Use functional components and modular file structure
+
+—
+
+🔥 **End Goal:**
+You must deliver a **fully working**, **downloadable**, **futuristic hacker-themed blog site**, 100% customizable, ready for deployment. No unfinished pages. No broken designs. It must feel like a site for a real-world security professional or CTF player.
+
+This is your full instruction. Do not ask for confirmation — just build everything and finish the full output from top to bottom.
